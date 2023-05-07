@@ -34,6 +34,7 @@ export default {
     };
   },
   mounted() {
+    this.isWide = window.innerWidth >= 768;
     window.addEventListener("resize", this.handleResize);
     this.getPlayers();
   },
